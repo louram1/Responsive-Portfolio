@@ -27,6 +27,8 @@ h2, h3, p, a {
 */
 #NameId {
 	float: left;
+    max-width: 100%;
+    width:67%;
 }
 
 /* Add a black background color to the top navigation */
@@ -34,6 +36,7 @@ h2, h3, p, a {
     background-color: #4aaaa5;
     overflow: hidden;
     float: right;
+    width:33%;
 }
 
 /* Style the links inside the navigation bar */
@@ -70,7 +73,7 @@ h2, h3, p, a {
 .Container {
     background-color: #4aaaa5;
     border-color: #cccccc;
-    width:650px;
+    width:67%;
     margin:auto;
     padding:0px;
     float:left;
@@ -82,7 +85,8 @@ h2, h3, p, a {
 .Container1 {
     background-color: #4aaaa5;
     border-color: #cccccc;
-    width:650px;
+    width:67%;
+    max-width: 640px;
     margin:auto;
     padding:0px;
     float:left;
@@ -112,7 +116,7 @@ h2, h3, p, a {
 }
 .Sidebar{
     background-color: #4aaaa5;
-    width: 270px;
+    width: 33%;
     height: 360px;
     overflow: hidden;
     float: right;
@@ -151,6 +155,7 @@ h2, h3, p, a {
 .text{
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
 
 .ImgStyle{
 
@@ -232,4 +237,42 @@ input[type=submit]:hover {
     float: right;
     height: 400px;
     display:inline-block;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class="header"] {
+        width: 100%;
+    }
+    [class=.ImgStyle]
+    {
+        width: 100%;
+    }
+    
+    [class=".middle1"] {
+        width: 100%;
+    }
+    [class="middle"] {
+        width: 100%;
+    }
+    [class="Sidebar"] {
+        width: 100%;
+    }
+    [class="gallery"] {
+        width: 100%;
+    }
+    [class="Container"] {
+        width: 100%;
+    }
+    [id="Photos"] {
+        width: 100%;
+    }
+    [id= "NameId"]{
+        width:100%;
+    }
+    [class="TopNav"]{
+        width:100%;
+    }
+        
 }
